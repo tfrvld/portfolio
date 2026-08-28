@@ -23,7 +23,7 @@ function Services() {
             </div>
             <Web className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[150px] md:h-[150px] lg:mt-10" />
           </div>
-          <div className="flex justify-center overflow-scroll h-[150px] sm:h-[200px] md:h-[150px]">
+          <div className="flex justify-center h-[150px] sm:h-[200px] md:h-[150px]">
             <p className="text-white text-center text-[14px] md:text-[14px] lg:text-[20px] font-inter w-3/4 mt-8">
               Develop high-performance, scalable web applications.
             </p>
@@ -38,7 +38,7 @@ function Services() {
             </div>
             <Uiux className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[150px] md:h-[150px] lg:mt-10" />
           </div>
-          <div className="flex justify-center overflow-scroll h-[150px] sm:h-[200px] md:h-[150px]">
+          <div className="flex justify-center h-[150px] sm:h-[200px] md:h-[150px]">
             <p className="text-white text-center text-[14px] md:text-[14px] lg:text-[20px] font-inter w-3/4 mt-8">
               Design user-centered interfaces for engaging digital interactions.
             </p>
@@ -53,7 +53,7 @@ function Services() {
             </div>
             <Mobile className="w-[150px] h-[150px] sm:w-[200px] sm:h-[200px] md:w-[150px] md:h-[150px] lg:mt-10" />
           </div>
-          <div className="flex justify-center overflow-scroll h-[150px] sm:h-[200px] md:h-[150px]">
+          <div className="flex justify-center h-[150px] sm:h-[200px] md:h-[150px]">
             <p className="text-white text-center text-[14px] md:text-[14px] lg:text-[20px] font-inter w-3/4 mt-8">
               Develop smooth, high-performing mobile applications.
             </p>

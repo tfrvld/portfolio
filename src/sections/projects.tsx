@@ -50,14 +50,14 @@ function Projects() {
           </div>
           <div className="w-[340px] h-[120px] sm:w-[400px] sm:h-[160px] md:w-[410px] md:h-[160px] lg:w-[450px] lg:h-[160px] bg-whitebg/10 rounded-[10px] backdrop-blur-md inset-shadow-white/50 inset-shadow-xs">
             <div className="w-fit bg-black/10 rounded-[10px] border-white/50 border mt-3 ml-3 px-[6px] py-[2px] text-white text-center text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]">
-              Wedding Invitation
+              Server Inventory
             </div>
             <p className="text-white px-3 text-[16px] sm:text-[18px] md:text-[20px]">
-              Integrate wedding invitation into digital
+              Internship project at Diskominfo Sumut
             </p>
             <p className="text-white px-3 text-[10px] sm:text-[14px]">
-              Create digital wedding invitations with an attractive and
-              appealing design
+              Create CRUD sistem to handle server inventory data, make data
+              handling become more efficient and effective
             </p>
           </div>
         </div>
