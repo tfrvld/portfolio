@@ -40,9 +40,13 @@ function Hero() {
                     See My Work
                   </div>
                 </a>
-                <a href="CV_Trifahmi_Rivaldo.pdf" download className="w-auto">
+                <a
+                  href="https://www.linkedin.com/in/trifahmi-rivaldo-47218b2bb/"
+                  download
+                  className="w-auto"
+                >
                   <div className="text-white text-sm sm:text-[15px] md:text-[19px] lg:text-[23px] px-5 py-3 md:py-1 bg-third rounded-[5px] text-center">
-                    Download CV
+                    See My Linked In
                   </div>
                 </a>
               </div>
