@@ -1,0 +1,24 @@
+@keyframes floatRotateSmooth {
+  0% {
+    /* Posisi awal: di bawah + miring sedikit ke kiri */
+    transform: translateY(0px) rotate(-2.5deg);
+  }
+  50% {
+    /* Posisi puncak: melayang ke atas + miring sedikit ke kanan */
+    transform: translateY(-16px) rotate(2.5deg);
+  }
+  100% {
+    /* Kembali ke posisi awal dengan transisi yang mulus */
+    transform: translateY(0px) rotate(-2.5deg);
+  }
+}
+
+.floating-image {
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+  transform-origin: center center;
+
+  animation: floatRotateSmooth 6.5s ease-in-out infinite;
+}
