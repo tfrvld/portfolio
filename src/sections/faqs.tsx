@@ -1,6 +1,17 @@
 import FaqsCard from "../components/faqscard";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "../css/floating.css";
 
 function Faqs() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   const title1 = "How can we get started";
   const detail1 =
     "We can start by contacting me to discuss and ask about my work";
@@ -34,11 +45,21 @@ function Faqs() {
         Answer to common question about my work and process
       </h2>
       <div className="grid grid-cols-1 justify-items-center mt-[3vh] gap-5">
-        <FaqsCard title={title1} detail={detail1} />
-        <FaqsCard title={title2} detail={detail2} />
-        <FaqsCard title={title3} detail={detail3} />
-        <FaqsCard title={title4} detail={detail4} />
-        <FaqsCard title={title5} detail={detail5} />
+        <div data-aos-delay="200" data-aos="fade-up">
+          <FaqsCard title={title1} detail={detail1} />
+        </div>
+        <div data-aos-delay="400" data-aos="fade-up">
+          <FaqsCard title={title2} detail={detail2} />
+        </div>
+        <div data-aos-delay="600" data-aos="fade-up">
+          <FaqsCard title={title3} detail={detail3} />
+        </div>
+        <div data-aos-delay="800" data-aos="fade-up">
+          <FaqsCard title={title4} detail={detail4} />
+        </div>
+        <div data-aos-delay="1000" data-aos="fade-up">
+          <FaqsCard title={title5} detail={detail5} />
+        </div>
       </div>
     </div>
   );

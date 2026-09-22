@@ -1,7 +1,17 @@
 import Navbar from "../components/navbar";
 import Herosvg from "../assets/svg/hero_icon.tsx";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "../css/floating.css";
 
 function Hero() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <>
       <div
@@ -12,7 +22,11 @@ function Hero() {
           <Navbar></Navbar>
         </div>
         <div className="px-6 md:px-[6vw] mt-[8vh] md:mt-[10vh] flex flex-col gap-8 md:gap-0">
-          <div className="flex flex-col items-center md:items-start">
+          <div
+            className="flex flex-col items-center md:items-start"
+            data-aos-delay="250"
+            data-aos="fade-right"
+          >
             <p className="font-outfit text-lg sm:text-[25px] md:text-[30px] lg:text-[40px] text-white text-center md:text-left">
               Hello, Im{" "}
               <span className="text-fourth font-bold">Trifahmi Rivaldo</span>
@@ -22,10 +36,18 @@ function Hero() {
             </p>
           </div>
           {/* SVG di mobile: full width, ruang lega */}
-          <div className="w-full flex justify-center md:hidden my-[2.5vh]">
-            <Herosvg className="w-[220px] h-[220px]" />
+          <div
+            className="w-full flex justify-center md:hidden my-[2.5vh]"
+            data-aos-delay="750"
+            data-aos="fade-left"
+          >
+            <Herosvg className="w-[220px] h-[220px] floating-image" />
           </div>
-          <div className="flex flex-col md:flex-row">
+          <div
+            className="flex flex-col md:flex-row"
+            data-aos-delay="500"
+            data-aos="fade-right"
+          >
             <div className="w-full md:w-1/2 text-center md:text-left">
               <p className="font-outfit text-sm sm:text-[20px] md:text-[25px] lg:text-[30px] text-white">
                 UI/UX DESIGNER
@@ -52,9 +74,13 @@ function Hero() {
               </div>
             </div>
             {/* SVG di desktop tetap seperti semula */}
-            <div className="hidden md:flex w-1/2 justify-center">
+            <div
+              className="hidden md:flex w-1/2 justify-center"
+              data-aos-delay="750"
+              data-aos="fade-left"
+            >
               <div className="md:mt-[3vh] lg:mt-[0] md:ml-[25vh]">
-                <Herosvg className="md:w-[200px] md:h-[200px] lg:w-[350px] lg:h-[350px]" />
+                <Herosvg className="md:w-[200px] md:h-[200px] lg:w-[350px] lg:h-[350px] floating-image" />
               </div>
             </div>
           </div>

@@ -6,4 +6,11 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: process.env.VERCEL ? "/" : "/portfolio/",
+  server: {
+    host: "0.0.0.0",
+    port: 3000,
+  },
+  preview: {
+    port: 3001,
+  },
 });

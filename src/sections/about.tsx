@@ -11,24 +11,44 @@ import LaravelSvg from "../assets/svg/laravel";
 import ReactSvg from "../assets/svg/react";
 import NodejsSvg from "../assets/svg/nodejs";
 import TailwindSvg from "../assets/svg/tailwind";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "../css/floating.css";
 
 function About() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <div
       id="about"
       className="w-full font-outfit px-[6vw] mb-[2vh] md:mb-[5vh] scroll-mt-10"
     >
-      <h1 className="text-white text-center text-[20px] sm:text-[30px] md:text-[38px] lg:text-[43px] pt-[4vh]">
+      <h1
+        className="text-white text-center text-[20px] sm:text-[30px] md:text-[38px] lg:text-[43px] pt-[4vh]"
+        data-aos="fade-left"
+      >
         About Me
       </h1>
-      <h2 className="text-white text-center text-[10px] sm:text-[16px] md:text-[20px] lg:text-[22px] font-inter">
+      <h2
+        className="text-white text-center text-[10px] sm:text-[16px] md:text-[20px] lg:text-[22px] font-inter"
+        data-aos="fade-right"
+      >
         I love building websites and mobile apps, and designing high-quality,
         high-performance UI/UX
       </h2>
 
       <div className="flex justify-center">
         <div className="grid grid-cols-1 md:grid-cols-3 mt-[5vh] gap-5 w-full max-w-[1200px] mx-auto">
-          <div className="col-span-1 bg-[#d9d9d9]/5 backdrop-blur-md inset-shadow-white/50 inset-shadow-xs px-4 sm:px-6 rounded-[10px] md:rounded-[15px] lg:rounded-[20px] w-full flex flex-col items-center py-[3vh] justify-between">
+          <div
+            className="col-span-1 bg-[#d9d9d9]/5 backdrop-blur-md inset-shadow-white/50 inset-shadow-xs px-4 sm:px-6 rounded-[10px] md:rounded-[15px] lg:rounded-[20px] w-full flex flex-col items-center py-[3vh] justify-between"
+            data-aos="fade-right"
+          >
             <div className="flex flex-col items-center">
               <img
                 src={pp}
@@ -70,7 +90,11 @@ function About() {
           </div>
 
           <div className="col-span-1 md:col-span-2 flex flex-col gap-5">
-            <div className="bg-[#d9d9d9]/5 backdrop-blur-md inset-shadow-white/50 inset-shadow-xs rounded-[10px] md:rounded-[15px] lg:rounded-[20px] px-[2vw] py-[3vh]">
+            <div
+              className="bg-[#d9d9d9]/5 backdrop-blur-md inset-shadow-white/50 inset-shadow-xs rounded-[10px] md:rounded-[15px] lg:rounded-[20px] px-[2vw] py-[3vh]"
+              data-aos-delay="200"
+              data-aos="fade-left"
+            >
               <p className="text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px]">
                 Hi I'm Trifahmi Rivaldo
               </p>
@@ -87,7 +111,11 @@ function About() {
                 both functional and visually satisfying results
               </p>
             </div>
-            <div className="bg-[#d9d9d9]/5 backdrop-blur-md inset-shadow-white/50 inset-shadow-xs rounded-[10px] md:rounded-[15px] lg:rounded-[20px] px-[2vw] py-[2vh]">
+            <div
+              className="bg-[#d9d9d9]/5 backdrop-blur-md inset-shadow-white/50 inset-shadow-xs rounded-[10px] md:rounded-[15px] lg:rounded-[20px] px-[2vw] py-[2vh]"
+              data-aos-delay="400"
+              data-aos="fade-left"
+            >
               <p className="text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px]">
                 Tech Stack
               </p>
@@ -101,7 +129,11 @@ function About() {
                 <NodejsSvg className="w-[45px] h-[45px] md:w-[40px] md:h-[40px] lg:w-[55px] lg:h-[55px]" />
               </div>
             </div>
-            <div className="bg-[#d9d9d9]/5 backdrop-blur-md inset-shadow-white/50 inset-shadow-xs rounded-[10px] md:rounded-[15px] lg:rounded-[20px] px-[2vw] py-[1vh]">
+            <div
+              className="bg-[#d9d9d9]/5 backdrop-blur-md inset-shadow-white/50 inset-shadow-xs rounded-[10px] md:rounded-[15px] lg:rounded-[20px] px-[2vw] py-[1vh]"
+              data-aos-delay="600"
+              data-aos="fade-left"
+            >
               <p className="text-white text-[14px] sm:text-[16px] md:text-[18px] lg:text-[22px]">
                 Expertise
               </p>
